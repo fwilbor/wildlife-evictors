@@ -7,6 +7,7 @@ import { Link } from 'react-router-dom';
 const Navbar = ({ icon, title }) => {
 
     return (
+
         <BrowserRouter>
             <nav className="navbar bg-primary">
                 <h1>
@@ -35,6 +36,7 @@ const Navbar = ({ icon, title }) => {
             </nav>
 
         </BrowserRouter>
+
     );
 
 }
