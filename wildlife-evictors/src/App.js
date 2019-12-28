@@ -1,6 +1,9 @@
 import React from 'react';
-import Navbar from '../src/pages/components/Navbar'
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import Navbar from '../src/pages/components/Navbar';
 import './App.css';
+import Logo from '../src/welogo.png';
+import AboutUs from '../src/pages/AboutUs';
 
 
 
@@ -8,23 +11,34 @@ import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <Navbar />
-        <h1>Wildlife Evictors</h1>
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
+    <Router>
+      <div className="App">
+        <header className="App-header">
+          <img src={Logo} alt="website logo" />
+          <Navbar />
+          <h1>Wildlife Evictors</h1>
+          <p>
+            Edit <code>src/App.js</code> and save to reload.
         </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          This is the Future Site of Wildlife Evictors
+          <a
+            className="App-link"
+            href="https://reactjs.org"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            This is the Future Site of Wildlife Evictors
         </a>
-      </header>
-    </div>
+        </header>
+      </div>
+      <div className="container">
+        <Switch>
+
+          <Route exact path='/about' component={AboutUs} />
+
+
+        </Switch>
+      </div>
+    </Router>
   );
 }
 
