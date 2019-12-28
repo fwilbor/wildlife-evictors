@@ -4,6 +4,8 @@ import Navbar from '../src/pages/components/Navbar';
 import './App.css';
 import Logo from '../src/welogo.png';
 import AboutUs from '../src/pages/AboutUs';
+import Home from '../src/pages/Home';
+import Youtube from '../src/pages/components/Youtube';
 
 
 
@@ -17,22 +19,25 @@ function App() {
           <img src={Logo} alt="website logo" />
           <Navbar />
           <h1>Wildlife Evictors</h1>
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-        </p>
+          <div>
+            <Youtube />
+          </div>
+          <br></br>
+
+
           <a
             className="App-link"
-            href="https://reactjs.org"
+            href="http://wildlife-evictors.com/wp/"
             target="_blank"
             rel="noopener noreferrer"
           >
-            This is the Future Site of Wildlife Evictors
+            This is the Old Site of Wildlife Evictors
         </a>
         </header>
       </div>
       <div className="container">
         <Switch>
-
+          <Route exact path='/' component={Home} />
           <Route exact path='/about' component={AboutUs} />
 
 
