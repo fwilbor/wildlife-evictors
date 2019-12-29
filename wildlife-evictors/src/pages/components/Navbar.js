@@ -1,8 +1,8 @@
 import React from 'react';
-import { BrowserRouter } from "react-router-dom";
+import { BrowserRouter, Link } from "react-router-dom";
 
 import PropTypes from 'prop-types';
-import { Link } from 'react-router-dom';
+
 
 const Navbar = ({ icon, title }) => {
 

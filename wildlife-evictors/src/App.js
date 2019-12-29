@@ -1,13 +1,11 @@
 import React from 'react';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
-import Navbar from '../src/pages/components/Navbar';
 import './App.css';
-import Logo from '../src/welogo.png';
 import AboutUs from '../src/pages/AboutUs';
 import Home from '../src/pages/Home';
 import Wildlife from '../src/pages/Wildlife';
 import Other from '../src/pages/Other';
-import Youtube from '../src/pages/components/Youtube';
+
 
 
 
