@@ -17,34 +17,17 @@ function App() {
   return (
     <Router>
       <div className="App">
-        <header className="App-header">
-          <img src={Logo} alt="website logo" />
-          <Navbar />
-          <h1>Wildlife Evictors</h1>
-          <div>
-            <Youtube />
-          </div>
-          <br></br>
 
 
-          <a
-            className="App-link"
-            href="http://wildlife-evictors.com/wp/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            This is the Old Site of Wildlife Evictors
-        </a>
-        </header>
-      </div>
-      <div className="container">
-        <Switch>
-          <Route exact path='/' component={Home} />
-          <Route exact path='/about' component={AboutUs} />
-          <Route exact path='/wildlife' component={Wildlife} />
-          <Route exact path='/other' component={Other} />
+        <div className="container">
+          <Switch>
+            <Route exact path='/' component={Home} />
+            <Route exact path='/about' component={AboutUs} />
+            <Route exact path='/wildlife' component={Wildlife} />
+            <Route exact path='/other' component={Other} />
 
-        </Switch>
+          </Switch>
+        </div>
       </div>
     </Router>
   );
